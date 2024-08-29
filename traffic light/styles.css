@@ -1,0 +1,75 @@
+.traffic {
+    height: 470px;
+    width: 200px;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border: none;
+    margin: 100px 0px 0px 250px;
+    background-color: black;
+}
+
+.red, .yellow, .green {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-radius: 50px;
+    margin-left: 49px;
+    position: relative;
+    top: 30px;
+    box-shadow: 0px 0px 20px #fdfdfd80;
+    border: none;
+}
+
+.red {
+    background-color: red;
+    animation: glow-red 10s infinite;
+}
+
+.yellow {
+    background-color: yellow;
+    margin-top: 50px;
+    animation: glow-yellow 6s infinite;
+}
+
+.green {
+    background-color: green;
+    margin-top: 50px;
+    animation: glow-green 6s infinite;
+}
+
+@keyframes glow-red {
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.2;
+    }
+    100%{
+        opacity:0.2;
+    }
+}
+
+@keyframes glow-yellow {
+    0%{
+        opacity:0.2;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.2;
+    }
+}
+
+@keyframes glow-green {
+    0%{
+        opacity:0.2;
+    }
+    50%{
+        opacity:0.2;
+    }
+    100%{
+        opacity:1;
+    }
+}
